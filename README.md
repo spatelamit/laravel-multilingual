@@ -33,7 +33,7 @@ php artisan migrate
 
 ### 4. Import Sample Data
 
-If you have a sample SQL file (e.g., `sample.sql`), you can import it into your MySQL database using phpMyAdmin or a similar tool.
+You have to import sample SQL file (e.g., `DB_sample/sample.sql`), you can import it into your MySQL database using phpMyAdmin or a similar tool. copy paste if not works
 
 ### 5. Start Laravel Server
 
