@@ -19,11 +19,8 @@ class CheckoutController extends Controller
 
     public function process(Request $request)
     {
-        // Here you can add your order processing logic (e.g., payment gateway integration)
 
-        // Clear the cart
         session()->forget('cart');
-
         $locale = app()->getLocale();
         return redirect()->route('home', ['locale' => $locale])
             ->with('success', __('lang.order_placed_msg'));

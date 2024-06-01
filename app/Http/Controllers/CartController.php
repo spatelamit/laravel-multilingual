@@ -10,7 +10,6 @@ class CartController extends Controller
 {
     public function index()
     {
-        // cart items from session
         $cart = session()->get('cart');
         return view('cart.cart', compact('cart'));
     }
@@ -22,7 +21,7 @@ class CartController extends Controller
 
         $product = Product::findOrFail($productId);
 
-        // Add product to cart in session
+        // Add product 
         $cart = session()->get('cart');
         $cart[$productId] = [
             'product' => $product,
@@ -38,7 +37,7 @@ class CartController extends Controller
     {
         $productId = $request->input('product_id');
 
-        // Remove product from cart in session
+        // Remove product from cart
         $cart = session()->get('cart');
         unset($cart[$productId]);
         session()->put('cart', $cart);
