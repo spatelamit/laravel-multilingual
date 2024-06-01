@@ -303,6 +303,46 @@
 </section>
 <!-- end why section -->
 
+
+<section>
+    <div class="section video-section" style="height: 100vh;">
+         <div class="video-container">
+            <iframe id="youtube-video" src="https://www.youtube.com/embed/KKNCiRWd_j0?si=t5LyAUCUJankUV_u" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+<script type="text/javascript">
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var windowHeight = window.innerHeight;
+    var videoSection = document.querySelector('.video-section');
+    var videoContainer = document.querySelector('.video-container');
+    var sectionTop = videoSection.offsetTop;
+    var sectionHeight = videoSection.offsetHeight;
+    var sectionBottom = sectionTop + sectionHeight;
+    var zoomFactor;
+console.log(scrollPosition, zoomFactor);
+zoomFactor = (scrollPosition - sectionTop) / sectionHeight
+console.log( zoomFactor );
+if(scrollPosition>= 700){
+   // zoomFactor = 1;
+   videoContainer.style.width = (110 + zoomFactor * 30) + '%';
+   // alert('');
+     // videoContainer.style.width = (70 + zoomFactor * 30) + '%'; // Increase width as zoom factor increases
+     // videoSection.style.width = (70 + zoomFactor * 30) + '%'; // Increase width as zoom factor increases
+}
+if(scrollPosition>= 1300){
+   // zoomFactor = 1;
+   videoContainer.style.width = (100 - zoomFactor * 30) + '%';
+   // alert('');
+
+}
+
+});
+
+</script>
+</section>
+
 <!-- arrival section -->
 <section class="arrival_section">
    <div class="container">
@@ -328,17 +368,6 @@
       </div>
    </div>
 </section>
-<section id="video_section" class=" layout_padding">
-   <div class="content">
-      <div class="spacer"></div>
-      <div class="video-container">
-         <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            frameborder="0" allowfullscreen></iframe>
-      </div>
-   </div>
-</section>
-<script type="text/javascript">
-   // script.js
-</script>
+
 <!-- end arrival section -->
 @include('includes.footer')
