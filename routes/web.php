@@ -19,6 +19,7 @@ use App\Http\Controllers\CheckoutController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::group(['prefix' => '{locale}' ], function() {
 Route::get('/products/{id}', [ProductController::class, 'show']);
 
