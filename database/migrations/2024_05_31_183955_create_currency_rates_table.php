@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('currency_from');
             $table->string('currency_to');
             $table->float('rate');
+            $table->string('currency_symbol');
             $table->timestamps();
         });
     }
