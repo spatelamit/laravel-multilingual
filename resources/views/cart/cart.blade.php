@@ -26,7 +26,7 @@
                         <tr>
                             <td>{{ $item['product']->title }}</td>
                             <td>
-                                <input type="number" name="quantity" value="{{ $item['quantity'] }}" min="1" />
+                                <input type="number" name="quantity" value="{{ $item['quantity'] }}" min="1" style="width: 80px;"/>
                             </td>
                             @php
                                 $itemTotal = $item['product']->price * $item['quantity'];

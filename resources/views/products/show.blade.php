@@ -29,7 +29,7 @@
          <form action="{{ url($lang . '/cart/add') }}" method="post">
             @csrf
             <input type="hidden" name="product_id" value="{{ $product->id }}">
-            <input type="number" name="quantity" value="1" min="1">
+            <input type="number" name="quantity" value="1" min="1" style="width: 80px;">
             <button type="submit">{{__('lang.add_to_cart')}}</button>
          </form><br>
          <div class="col-sm-12 col-md-12 ">

@@ -14,7 +14,7 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> 
 </section>
 <!-- end inner page section -->
 <!-- product section -->

@@ -32,3 +32,4 @@ class Product extends Model
         return $this->hasMany(ProductTranslation::class, 'product_id');
     }
 }
+ 
