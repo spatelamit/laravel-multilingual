@@ -46,8 +46,8 @@ class SetLocale
 
         // Get the currency symbol from the database
         $symbol = CurrencyRate::where('currency_from', 'usd')
-                              ->where('currency_to', $currency)
-                              ->value('currency_symbol');
+            ->where('currency_to', $currency)
+            ->value('currency_symbol');
         Session::put('currency_symbol', $symbol);
 
         return $next($request);

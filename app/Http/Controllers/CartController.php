@@ -8,7 +8,7 @@ use App\Models\Product;
 
 class CartController extends Controller
 {
-     public function index()
+    public function index()
     {
         // cart items from session
         $cart = session()->get('cart');

@@ -13,21 +13,21 @@ class Product extends Model
 {
     use HasFactory;
     protected $fillable = ['title', 'description', 'price'];
-   
-     public function getPriceAttribute()
+
+    public function getPriceAttribute()
     {
         $currency = session('currency', 'usd');
         $basePrice = $this->attributes['price'];
         $rate = CurrencyRate::where('currency_from', 'usd')
-                            ->where('currency_to', $currency)
-                            ->value('rate');
+            ->where('currency_to', $currency)
+            ->value('rate');
         if (!$rate) {
-            return $basePrice; // Fallback to base currency if rate not found
+            return $basePrice; 
         }
         return $basePrice * $rate;
     }
 
-public function translations()
+    public function translations()
     {
         return $this->hasMany(ProductTranslation::class, 'product_id');
     }
