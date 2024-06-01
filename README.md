@@ -1,7 +1,8 @@
 ```markdown
 # Laravel Multilingual and Multicurrency Project
 
-This is a simple Laravel project with support for multiple languages and currencies. It also includes a basic "Add to Cart" functionality.
+This is a simple Laravel project with support for multiple languages and currencies.
+ It also includes a basic "Add to Cart" functionality.
 
 ## Setup Instructions
 
@@ -33,7 +34,8 @@ php artisan migrate
 
 ### 4. Import Sample Data
 
-You have to import sample SQL file (e.g., `DB_sample/sample.sql`), you can import it into your MySQL database using phpMyAdmin or a similar tool. copy paste if not works
+You have to import sample SQL file (e.g., `DB_sample/sample.sql`), you can import it into your MySQL database 
+using phpMyAdmin or a similar tool. copy paste if not works
 
 ### 5. Start Laravel Server
 
@@ -85,4 +87,5 @@ The project includes a simple "Add to Cart" functionality for managing items in 
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Feel free to use this updated content for your README.md file. Let me know if you need any further modifications!
+Feel free to use this updated content for your README.md file. 
+Let me know if you need any further modifications!
