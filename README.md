@@ -1,4 +1,4 @@
-```markdown
+
 # Laravel Multilingual and Multicurrency Project
 
 This is a simple Laravel project with support for multiple languages and currencies.
@@ -85,7 +85,7 @@ The project includes a simple "Add to Cart" functionality for managing items in 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-```
+
 
 Feel free to use this updated content for your README.md file. 
 Let me know if you need any further modifications!
