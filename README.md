@@ -44,6 +44,8 @@ This Laravel application supports multiple languages and currencies and includes
 
 6. **Import sample data:**
 
+	Import File in your database 
+	Or 
    ```sh
    mysql -u your_username -p your_database < DB_sample/sample.sql
    ```

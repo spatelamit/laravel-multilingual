@@ -46,3 +46,12 @@ INSERT INTO `product_translations` (`id`, `product_id`, `language`, `name`, `des
 (19, 5, 'pl', 'Smartwatch', 'Smartwatch z funkcjami monitorowania zdrowia i śledzenia aktywności fizycznej', NULL, NULL),
 (20, 5, 'pt', 'Smartwatch', 'Smartwatch com recursos de monitoramento de saúde e rastreamento de fitness', NULL, NULL);
 
+INSERT INTO `product_translations` (`product_id`, `language`, `name`, `description`, `created_at`, `updated_at`) 
+VALUES (1, 'en', 'Laptop', 'Powerful laptop for work and entertainment', NULL, NULL), 
+(2, 'en', 'Smartphone', 'Latest smartphone with advanced features', NULL, NULL),
+(3, 'en', 'Headphones', 'High-quality headphones for an immersive audio experience', NULL, NULL),
+(4, 'en', 'Camera', 'Professional camera for capturing stunning photos and videos', NULL, NULL), 
+(5, 'en', 'Smartwatch', 'Smartwatch with health monitoring and fitness tracking features', NULL, NULL);
+
+
+COMMIT;
